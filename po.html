@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aditi Mahale | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background: rgba(0, 0, 0, 0.1);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav-logo {
+      font-weight: bold;
+      color: white;
+      font-size: 20px;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #667eea, #764ba2);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 140px 20px 60px;
+      min-height: 100vh;
+    }
+
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+      animation: drool 3s ease-in-out infinite alternate;
+      border: 4px solid white;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .cta-buttons {
+      margin-top: 20px;
+    }
+
+    .cta-btn {
+      background-color: #fff;
+      color: #764ba2;
+      padding: 12px 20px;
+      text-decoration: none;
+      margin: 10px;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .cta-btn:hover {
+      background-color: #764ba2;
+      color: #fff;
+    }
+
+    .hero h2 {
+      color: #ffffff;
+      font-size: 20px;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 60px 20px;
+      background-color: #fff;
+      max-width: 900px;
+      margin: 0 auto 40px auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      scroll-margin-top: 100px;
+    }
+
+    h2 {
+      color: #764ba2;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .project {
+      background-color: #f0f0f0;
+      padding: 20px;
+      margin-top: 15px;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+      background-color: #e6e6ff;
+    }
+
+    footer {
+      padding: 20px;
+      background-color: #222;
+      color: white;
+      text-align: center;
+    }
+
+    @keyframes drool {
+      0% {
+        transform: scale(1);
+      }
+      100% {
+        transform: scale(1.05);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .cta-btn {
+        display: block;
+        margin: 10px auto;
+      }
+      .profile-img {
+        width: 120px;
+        height: 120px;
+      }
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-logo">Aditi Mahale</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-content" data-aos="fade-down">
+      <img src="photo.jpg" alt="Aditi Mahale" class="profile-img" />
+      <h1>Hi, I'm Aditi</h1>
+      <h2>🚀 Computer Science Undergrad | Future Tech Leader</h2>
+      <div class="cta-buttons">
+        <a href="#contact" class="cta-btn">Hire Me</a>
+        <a href="Aditi_Umesh_Mahale_Resume_OnePage.pdf" download class="cta-btn">Download Resume</a>
+      </div>
+    </div>
+  </header>
+
+  <section id="about" data-aos="fade-up">
+    <h2>About Me</h2>
+    <p>
+      I’m a passionate and detail-oriented Computer Science undergraduate currently based in Pune. I have hands-on experience in frontend development and building real-world projects. I'm constantly improving my skills in Java, MongoDB, and full-stack development. <br><br>
+      Beyond tech, I actively contribute to my college’s T&P Cell and COMET Forum, and I’ve built strong HR relations during campus drives. I love collaborating on impactful ideas and aim to be a future tech leader driving innovation.
+    </p>
+  </section>
+
+  <section id="projects" data-aos="fade-up">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Library Management System</h3>
+      <p>Web app for book check-in/out with MySQL and HTML/CSS/JS interface.</p>
+    </div>
+    <div class="project">
+      <h3>Event Registration System</h3>
+      <p>Full-stack system with signup, tracking, and database integration.</p>
+    </div>
+  </section>
+
+  <section id="contact" data-aos="fade-up">
+    <h2>Contact</h2>
+    <p><strong>Email:</strong> <a href="mailto:mahaleaditi03@gmail.com">mahaleaditi03@gmail.com</a></p>
+    <p><strong>Phone:</strong> +91-8010790520</p>
+    <p><strong>Location:</strong> Living Hub Girls PG near Swara Hostel, Wagholi, Pune</p>
+    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/aditi-mahale-04535a276" target="_blank">aditi-mahale-04535a276</a></p>
+    <p><strong>GitHub:</strong> <a href="https://github.com/Aditimahale03" target="_blank">Aditimahale03</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Aditi Umesh Mahale</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1200, easing: 'ease-in-out' });
+  </script>
+</body>
+</html>
+
